@@ -139,7 +139,7 @@ a {
 .box-mega-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  padding: 5px;
 }
 
 /* CỘT TRONG MEGA MENU */
