@@ -68,7 +68,7 @@ p{
     
 }
 
-.section .header{
+.section .header .container p{
     text-align: center;
     font-style: italic;
 }
@@ -80,6 +80,12 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
 }
 
 /* MENU CHÍNH */
@@ -139,27 +145,8 @@ a {
 .box-mega-menu {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
-}
-
-/* CỘT TRONG MEGA MENU */
-.c1 > li,
-.c2 > li {
-  min-width: 180px;
-}
-
-.c1 a,
-.c2 a {
-  display: block;
-  padding: 8px 0;
-  font-size: 14px;
-  color: #333;
-  transition: color 0.2s ease;
-}
-
-.c1 a:hover,
-.c2 a:hover {
-  color: #007bff;
+  width: 100px;
+  margin: 5px 5px;
 }
 
 /* MEGA MENU CẤP 3 */
@@ -173,4 +160,8 @@ a {
 
 li.p-relative:hover > .mega-menu {
   display: block;
+}
+
+.box-submenu ul li{
+    margin: 5px 5px;
 }
