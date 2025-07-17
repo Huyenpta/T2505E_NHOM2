@@ -67,3 +67,12 @@ p{
     }
     
 }
+
+.ds-center {
+    display: flex
+;
+    align-items: center;
+}
+.row {
+    margin: 0px -10px;
+}
