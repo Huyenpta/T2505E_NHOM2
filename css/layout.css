@@ -118,6 +118,7 @@ p{
   font-size: 16px;
   color: #333;
   transition: color 0.3s ease;
+  font-weight: 700;
 }
 
 .ul-menu > li > a:hover span {
@@ -129,12 +130,14 @@ p{
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: auto; 
+  min-width: 150px; /* Đảm bảo menu không quá nhỏ */
   background: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 0px;
   display: none;
   z-index: 1000;
+  text-align: center;
 }
 
 .ul-menu > li:hover > .mega-menu {
@@ -143,10 +146,9 @@ p{
 
 /* BOX CONTAINER CHỨA CÁC CỘT */
 .box-mega-menu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100px;
-  margin: 5px 5px;
+  display: inline-block; 
+  margin: 0px;
+  width: auto; 
 }
 
 /* MEGA MENU CẤP 3 */
@@ -155,16 +157,37 @@ p{
   left: 100%;
   width: auto;
   position: absolute;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 
-li.p-relative:hover > .mega-menu {
-  display: block;
+.box-submenu ul {
+  display: block; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.box-submenu ul li{
-    margin: 5px 5px;
+.box-submenu ul li {
+  padding: 0px;
+  text-align: left;
+  white-space: nowrap; 
+  position: relative;
 }
+
+.box-submenu ul li a {
+  display: block; 
+  padding: 10px 20px; 
+  background-color: transparent; 
+  color: #333; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.box-submenu ul li a:hover {
+  background-color: #007bff; 
+  color: white; 
+}
+
 
 .banner {
     text-align: center;
