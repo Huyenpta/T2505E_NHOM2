@@ -68,11 +68,104 @@ p{
     
 }
 
-.ds-center {
-    display: flex
-;
-    align-items: center;
+ul {
+  list-style: none;
 }
-.row {
-    margin: 0px -10px;
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MENU CHÍNH */
+.nav {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-family: sans-serif;
+}
+
+.nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ul-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* MỤC CẤP 1 */
+.ul-menu > li {
+  position: relative;
+}
+
+.ul-menu > li > a span {
+  display: block;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.ul-menu > li > a:hover span {
+  color: #007bff;
+}
+
+/* MEGA MENU (CẤP 2) */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+}
+
+.ul-menu > li:hover > .mega-menu {
+  display: block;
+}
+
+/* BOX CONTAINER CHỨA CÁC CỘT */
+.box-mega-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* CỘT TRONG MEGA MENU */
+.c1 > li,
+.c2 > li {
+  min-width: 180px;
+}
+
+.c1 a,
+.c2 a {
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.c1 a:hover,
+.c2 a:hover {
+  color: #007bff;
+}
+
+/* MEGA MENU CẤP 3 */
+.mega-menu .mega-menu {
+  top: 0;
+  left: 100%;
+  width: auto;
+  position: absolute;
+  padding: 10px;
+}
+
+li.p-relative:hover > .mega-menu {
+  display: block;
 }
