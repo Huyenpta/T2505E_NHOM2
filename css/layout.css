@@ -208,7 +208,7 @@ a {
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    width: 100%;
+    width: auto;
 }
 .slide-item {
     flex: 0 0 100%;
@@ -216,7 +216,7 @@ a {
     position: relative;
 }
 .slide-item img {
-    width: 100%;
+    width: auto;
     max-height: 600px;
     object-fit: cover;
     display: block;
