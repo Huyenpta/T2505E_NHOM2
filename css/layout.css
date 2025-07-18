@@ -61,16 +61,13 @@ p{
     .container{
         width: 1100px;
     }
-    
 }
 
 @media screen and (max-width:992px) {
     .container{
         width: 780px;
     }
-    
 }
-
 .section .header .container p{
     text-align: center;
     font-style: italic;
@@ -219,7 +216,10 @@ a {
 .slide:target {
   display: block;
 }
-
+#home{
+ scroll-behavior: smooth;
+}
+}
 /* Nếu không có target (mặc định) thì hiển thị slide1 */
 #home:target ~ .nav .main-slide #slide1 {
   display: block;
