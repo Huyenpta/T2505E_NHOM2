@@ -220,7 +220,7 @@ a {
 }
 
 /* Nếu không có target (mặc định) thì hiển thị slide1 */
-html:not(:target) #slide1 {
+#home:target ~ .nav .main-slide #slide1 {
   display: block;
 }
 
