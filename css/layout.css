@@ -214,12 +214,16 @@ a {
 .slide-nav a:hover img {
   border: 2px solid #007bff;
 }
-/* Mặc định hiển thị slide1 nếu không có target */
-#slide1:target ~ #slide2,
-#slide2:target ~ #slide1 {
-  display: none;
+/* Khi bấm slide2, chỉ hiển thị slide2 */
+#slide2:target {
+  display: block;
 }
-#slide1 {
+/* Khi bấm slide1, chỉ hiển thị slide1 */
+#slide1:target {
+  display: block;
+}
+/* Nếu không có target (vừa tải trang hoặc không click gì) => hiển thị slide1 */
+body:not(:target) #slide1 {
   display: block;
 }
 /* CONTEN */
