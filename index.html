@@ -49,18 +49,22 @@
             </ul>
         </div>
         <div class="banner">
-            <div class="main-slide">
-                <div id="slide1" class="slide">
-                  <img src="images/tea1.png" alt="Slide 1">
+          <div class="main-slide">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+                <div class="slides">
+                  <div class="slide-img" id="slide1">
+                    <img src="images/tea1.png" alt="Slide 1">
+                  </div>
+                  <div class="slide-img" id="slide2">
+                    <img src="images/tea2.png" alt="Slide 2">
+                  </div>
                 </div>
-                <div id="slide2" class="slide">
-                  <img src="images/tea2.png" alt="Slide 2">
+                <div class="slide-nav">
+                  <label for="s1"><img src="images/tea1.png" alt="Thumb 1" /></label>
+                  <label for="s2"><img src="images/tea2.png" alt="Thumb 2" /></label>
                 </div>
-            </div>
-            <div class="slide-nav">
-                <a href="#slide1"><img src="images/tea1.png" alt="Thumb 1" /></a>
-                <a href="#slide2"><img src="images/tea2.png" alt="Thumb 2" /></a>
-            </div>
+          </div>
         </div>
     </nav>
     <main class="section main">
