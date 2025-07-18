@@ -217,13 +217,8 @@ a {
  scroll-behavior: smooth;
 }
 
-/* Nếu không có target (mặc định) thì hiển thị slide1 */
-.slide {
-  display: none;
-}
-
-#slide1,
-.slide:target {
+/* Nếu KHÔNG có slide nào được target, hiển thị slide1 */
+body:not(:has(.slide:target)) #slide1 {
   display: block;
 }
 
