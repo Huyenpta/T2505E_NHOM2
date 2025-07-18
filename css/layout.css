@@ -215,13 +215,11 @@ a {
 .slide-nav a:hover img {
   border: 2px solid #007bff;
 }
-
 .slide:target {
   display: block;
 }
-
-/* Slide đầu tiên hiển thị mặc định nếu không có :target */
-.main-slide:not(:has(:target)) .slide:first-child {
+/* mặc định hiển thị slide đầu */
+#slide1 {
   display: block;
 }
 /* CONTEN */
