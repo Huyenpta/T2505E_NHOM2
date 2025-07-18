@@ -226,7 +226,7 @@ a {
 #home:target ~ .nav .main-slide #slide1 {
   display: block;
 }
-.main-slide .slide:first-child {
+.main-slide:not(:has(.slide:target)) #slide1 {
   display: block;
 }
 
