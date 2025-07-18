@@ -224,6 +224,9 @@ a {
 #home:target ~ .nav .main-slide #slide1 {
   display: block;
 }
+.main-slide .slide:first-child {
+  display: block;
+}
 
 /* CONTEN */
 .Sthe1{
