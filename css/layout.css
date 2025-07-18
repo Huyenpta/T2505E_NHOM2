@@ -182,37 +182,25 @@ a {
 
 /*Ảnh chạy*/
 .banner {
-  width: 100%;
   text-align: center;
   margin: 20px auto;
 }
-/* khung chứa slide có scroll */
-.slides-wrapper {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
+.main-slide {
+  position: relative;
+  display: inline-block;
 }
-/* chứa tất cả slide theo chiều ngang */
-.slides {
-  display: flex;
-  width: fit-content;
+.slide {
+  display: none;
 }
-/* từng slide chỉ chiếm 100% viewport */
-.slide-item {
-  flex: 0 0 100vw;
-  scroll-snap-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slide.active,
+.slide:target {
+  display: block;
 }
-.slide-item img {
+.slide img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
-/* điều hướng bằng ảnh nhỏ */
 .slide-nav {
   margin-top: 10px;
 }
