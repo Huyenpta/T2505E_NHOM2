@@ -221,12 +221,14 @@ a {
 #home{
  scroll-behavior: smooth;
 }
-}
+
 /* Nếu không có target (mặc định) thì hiển thị slide1 */
-#home:target ~ .nav .main-slide #slide1 {
-  display: block;
+.slide {
+  display: none;
 }
-.main-slide:not(:has(.slide:target)) #slide1 {
+
+#slide1,
+.slide:target {
   display: block;
 }
 
