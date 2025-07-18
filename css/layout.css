@@ -178,39 +178,48 @@ a {
 }
 
 /*Ảnh chạy*/
+html {
+ scroll-behavior: smooth;
+}
 .banner {
-  text-align: center;
-  margin: 20px auto;
+text-align: center;
+margin: 20px auto;
 }
 .main-slide {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
+}
+.slide-wrapper {
+position: relative;
+}
+.slide-anchor {
+scroll-margin-top: 100px;
+height: 0;
 }
 .slide {
-  display: none;
-  scroll-margin-top: 100px; /* hoặc đúng chiều cao của menu bạn */
+display: none;
 }
-.slide:target {
-  display: block;
+.slide-anchor:target + .slide {
+display: block;
 }
 .slide img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+max-width: 100%;
+height: auto;
+border-radius: 10px;
 }
 .slide-nav {
-  margin-top: 10px;
+margin-top: 10px;
 }
 .slide-nav a img {
-  width: 100px;
-  height: auto;
-  margin: 0 5px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  transition: border 0.3s;
+width: 100px;
+height: auto;
+margin: 0 5px;
+border: 2px solid transparent;
+border-radius: 5px;
+transition: border 0.3s;
 }
 .slide-nav a:hover img {
-  border: 2px solid #007bff;
+border: 2px solid #007bff;
 }
 /* Slide nào được target thì hiển thị */
 .slide:target {
