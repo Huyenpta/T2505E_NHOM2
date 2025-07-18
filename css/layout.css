@@ -192,7 +192,6 @@ a {
 .slide {
   display: none;
 }
-.slide.active,
 .slide:target {
   display: block;
 }
@@ -215,10 +214,11 @@ a {
 .slide-nav a:hover img {
   border: 2px solid #007bff;
 }
-.slide:target {
-  display: block;
+/* Mặc định hiển thị slide1 nếu không có target */
+#slide1:target ~ #slide2,
+#slide2:target ~ #slide1 {
+  display: none;
 }
-/* mặc định hiển thị slide đầu */
 #slide1 {
   display: block;
 }
