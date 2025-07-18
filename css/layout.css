@@ -24,6 +24,9 @@ a:hover{
 }
 p{
     margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
 }
 /*Layout*/
 .section{
@@ -80,12 +83,6 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-p{
-    margin-bottom: 10px;
-    text-align: center;
-    font-style: italic;
 }
 
 /* MENU CHÍNH */
