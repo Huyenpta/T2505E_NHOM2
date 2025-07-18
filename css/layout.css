@@ -182,46 +182,50 @@ a {
 
 /*Ảnh chạy*/
 .banner {
-    width: 100%;
-    text-align: center;
-    margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
 }
+/* khung chứa slide có scroll */
 .slides-wrapper {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    display: flex;
-    justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
 }
+/* chứa tất cả slide theo chiều ngang */
 .slides {
-    display: flex;
-    width: max-content;
+  display: flex;
+  width: fit-content;
 }
+/* từng slide chỉ chiếm 100% viewport */
 .slide-item {
-    flex: 0 0 100vw; /* đúng bằng chiều rộng màn hình */
-    scroll-snap-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 0 0 100vw;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slide-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
+/* điều hướng bằng ảnh nhỏ */
 .slide-nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .slide-nav a img {
-    width: 100px;
-    height: auto;
-    margin: 0 5px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: border 0.3s;
+  width: 100px;
+  height: auto;
+  margin: 0 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border 0.3s;
 }
 .slide-nav a:hover img {
-    border: 2px solid #007bff;
+  border: 2px solid #007bff;
 }
 
 /* CONTEN */
