@@ -189,12 +189,7 @@ a {
 .slide {
   display: none;
 }
-.slide.active {
-  display: block;
-}
-.slide:target {
-  display: block;
-}
+
 .slide img {
   max-width: 100%;
   height: auto;
