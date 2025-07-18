@@ -179,49 +179,54 @@ a {
   background-color: #007bff; 
   color: white; 
 }
+
 /*Ảnh chạy*/
 .banner {
-    width: auto;
-    text-align: center;
-    margin: 20px auto;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
 }
 .slides {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  gap: 0; /* không có khoảng cách giữa các ảnh */
+  border-radius: 10px;
 }
 .slide-item {
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-    display: inline-block;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slide-item img {
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    max-width: 1199px; /* hoặc chiều ngang thật của ảnh */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-/* Ảnh nhỏ dưới */
+
+/* Thanh điều hướng ảnh nhỏ */
 .slide-nav {
-    margin-top: 15px;
+  margin-top: 10px;
 }
 .slide-nav a img {
-    width: 100px;
-    height: auto;
-    margin: 0 5px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: border 0.3s;
+  width: 100px;
+  height: auto;
+  margin: 0 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border 0.3s;
 }
 .slide-nav a:hover img {
-    border: 2px solid #007bff;
+  border: 2px solid #007bff;
 }
+
+/* CONTEN */
 .Xthe1{
     font-family: Arial, Helvetica, sans-serif;
     width: calc(100%);
