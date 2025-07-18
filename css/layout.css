@@ -216,12 +216,12 @@ a {
   border: 2px solid #007bff;
 }
 
-/* Slide đầu tiên sẽ hiển thị mặc định nếu không có target */
-.slide:first-child {
+.slide:target {
   display: block;
 }
-/* Khi click vào ảnh nhỏ dẫn đến ID tương ứng, thì hiển thị */
-.slide:target {
+
+/* Slide đầu tiên hiển thị mặc định nếu không có :target */
+.main-slide:not(:has(:target)) .slide:first-child {
   display: block;
 }
 /* CONTEN */
