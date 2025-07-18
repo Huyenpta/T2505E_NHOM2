@@ -216,6 +216,14 @@ a {
   border: 2px solid #007bff;
 }
 
+/* Slide đầu tiên sẽ hiển thị mặc định nếu không có target */
+.slide:first-child {
+  display: block;
+}
+/* Khi click vào ảnh nhỏ dẫn đến ID tương ứng, thì hiển thị */
+.slide:target {
+  display: block;
+}
 /* CONTEN */
 .Xthe1{
     font-family: Arial, Helvetica, sans-serif;
