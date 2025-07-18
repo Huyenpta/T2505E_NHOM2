@@ -181,7 +181,7 @@ a {
 }
 /*Ảnh chạy*/
 .banner {
-    width: 100%;
+    width: auto;
     text-align: center;
     margin: 20px auto;
 }
