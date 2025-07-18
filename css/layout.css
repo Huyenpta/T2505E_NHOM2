@@ -214,18 +214,16 @@ a {
 .slide-nav a:hover img {
   border: 2px solid #007bff;
 }
-/* Khi bấm slide2, chỉ hiển thị slide2 */
-#slide2:target {
+/* Slide nào được target thì hiển thị */
+.slide:target {
   display: block;
 }
-/* Khi bấm slide1, chỉ hiển thị slide1 */
-#slide1:target {
+
+/* Nếu không có target (mặc định) thì hiển thị slide1 */
+html:not(:target) #slide1 {
   display: block;
 }
-/* Nếu không có target (vừa tải trang hoặc không click gì) => hiển thị slide1 */
-body:not(:target) #slide1 {
-  display: block;
-}
+
 /* CONTEN */
 .Xthe1{
     font-family: Arial, Helvetica, sans-serif;
