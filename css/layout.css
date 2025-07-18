@@ -204,6 +204,8 @@ a {
     width: auto;
     max-width: 1199px; /* hoặc chiều ngang thật của ảnh */
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 /* Ảnh nhỏ dưới */
 .slide-nav {
