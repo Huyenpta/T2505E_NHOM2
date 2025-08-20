@@ -213,6 +213,39 @@ input[type="radio"] {
 }
 
 /* CONTEN */
+.product-item {
+  width: 250px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  /* để nút bám đáy */
+}
+
+.product-des {
+  float: left;
+  /* text trôi lên trên */
+  width: 100%;
+}
+
+.product-button {
+  position: absolute;
+  bottom: 10px;
+  /* bám đáy */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.xem-them {
+  text-decoration: line-through;
+}
+
 .Xthe1 {
   font-family: Arial, Helvetica, sans-serif;
   width: calc(100%);
@@ -258,13 +291,12 @@ input[type="radio"] {
   text-align: center;
 }
 
-.container-main{
-    display: flex;
-}
-.column-T1{
-    width: calc(30%);
-    float: left;
-    height: auto;
+.container-main {
+  display: flex;
 }
 
-
+.column-T1 {
+  width: calc(30%);
+  float: left;
+  height: auto;
+}
