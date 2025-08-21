@@ -213,6 +213,9 @@ input[type="radio"] {
 }
 
 /* CONTEN */
+.title-product{
+  padding: 10px;
+}
 .product-item {
   width: 250px;
   min-height: auto;
