@@ -214,7 +214,7 @@ input[type="radio"] {
 
 /* CONTEN */
 .title-product{
-  padding: 10px;
+  text-align: center;
 }
 .product-item {
   width: 250px;
