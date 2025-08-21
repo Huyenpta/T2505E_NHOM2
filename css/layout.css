@@ -233,7 +233,7 @@ input[type="radio"] {
 
 .product-button {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   /* bám đáy */
   left: 50%;
   transform: translateX(-50%);
